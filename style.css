@@ -1,0 +1,560 @@
+/* ── RESET & BASE ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: #faf7f0;
+  color: #0e1a12;
+}
+
+
+/* ── NAVBAR ── */
+.navbar { 
+  position: relative;
+  padding: 15px 20px;
+  background: #0e1a12;
+  border-radius: 60px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 15px 35px black;
+  border: 0.5px solid #ccc;
+  
+}
+
+.nav-logo {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #c8a951;
+  letter-spacing: 0.05em;
+}
+
+.nav-logo span {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.nav-links a:hover {
+  color: #c8a951;
+}
+
+/* ── HERO ── */
+.hero {
+  background: linear-gradient(160deg, #0e1a12 0%, #163826 60%, #0e2a1a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 5%;
+  padding-top: 65px;
+}
+
+
+
+.badge {
+  display: inline-block;
+  border: 1px solid #c8a951;
+  color: #c8a951;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.4rem 1.2rem;
+  border-radius: 50px;
+  margin-bottom: 1.8rem;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.1;
+  margin-bottom: 1.2rem;
+}
+
+.hero-sub {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: #c8a951;
+  color: #0e1a12;
+  padding: 0.85rem 2rem;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: opacity 0.2s;
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #ffffff;
+  padding: 0.85rem 2rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  border: 1px solid rgba(255,255,255,0.4);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.btn-outline:hover {
+  border-color: #c8a951;
+  color: #c8a951;
+}
+
+/* ── SECTIONS ── */
+.section {
+  padding: 5rem 5%;
+  background: #faf7f0;
+}
+
+.section-dark {
+  background: #0e1a12;
+}
+
+.section-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #2e8b57;
+  margin-bottom: 0.6rem;
+}
+
+
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #0e1a12;
+  margin-bottom: 0.8rem;
+}
+
+.section-title.white {
+  color: #ffffff;
+}
+
+.section-sub {
+  font-size: 0.95rem;
+  color: #6b7a6e;
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+}
+
+.divider {
+  width: 55px;
+  height: 3px;
+  background: #c8a951;
+  border-radius: 2px;
+  margin-bottom: 2rem;
+}
+
+/* ── GRID ── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ── CARDS IUT ── */
+.card {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 8px;
+  padding: 1.8rem;
+  text-decoration: none;
+  color: #0e1a12;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+  border-color: #1a5c38;
+}
+
+.card-region {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #2e8b57;
+}
+
+.card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 0.88rem;
+  color: #6b7a6e;
+  line-height: 1.7;
+  flex: 1;
+}
+
+.card-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1a5c38;
+  margin-top: 0.4rem;
+}
+
+/* ── TÉMOIGNAGES ── */
+.temoignage-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  padding: 1.8rem;
+  position: relative;
+  transition: background 0.25s;
+}
+
+.temoignage-card:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(200,169,81,0.35);
+}
+
+.quote-icon {
+  font-size: 3.5rem;
+  line-height: 1;
+  color: #c8a951;
+  opacity: 0.3;
+  position: absolute;
+  top: 0.8rem;
+  right: 1.2rem;
+  font-family: Georgia, serif;
+}
+
+.temoignage-text {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.85;
+  margin-bottom: 1.4rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1a5c38, #c8a951);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+.author-name {
+  color: #ffffff;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.author-role {
+  color: #c8a951;
+  font-size: 0.75rem;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: #0e1a12;
+  color: rgba(255,255,255,0.4);
+  text-align: center;
+  padding: 2rem 5%;
+  font-size: 0.82rem;
+}
+
+/* ── PAGES DÉTAIL IUT ── */
+.detail-hero {
+  background: linear-gradient(135deg, #1a5c38 0%, #0e2a1a 100%);
+  padding: 7rem 5% 3rem;
+  color: #ffffff;
+}
+
+.detail-hero .region {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #c8a951;
+  margin-bottom: 0.5rem;
+}
+
+.detail-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+.detail-hero p {
+  color: rgba(255,255,255,0.65);
+  font-size: 0.95rem;
+}
+
+.detail-body {
+  padding: 3rem 5%;
+  max-width: 900px;
+}
+
+.detail-section-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #1a5c38;
+  margin-bottom: 0.7rem;
+  margin-top: 2rem;
+}
+
+.detail-desc {
+  font-size: 0.95rem;
+  color: #6b7a6e;
+  line-height: 1.8;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  background: rgba(26,92,56,0.1);
+  color: #1a5c38;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.3rem 0.9rem;
+  border-radius: 50px;
+}
+
+.contact-info {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.contact-info p {
+  font-size: 0.9rem;
+  color: #0e1a12;
+}
+
+.contact-info span {
+  font-weight: 600;
+  color: #1a5c38;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 2.5rem;
+  color: #1a5c38;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* ── PAGE CONTACT ── */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 1.5rem;
+}
+
+.contact-card {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 8px;
+  padding: 1.8rem;
+}
+
+.contact-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.contact-card .city {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #2e8b57;
+  margin-bottom: 1.2rem;
+}
+
+.contact-item {
+  font-size: 0.86rem;
+  color: #6b7a6e;
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+
+.contact-item a {
+  color: #6b7a6e;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: #1a5c38;
+}
+
+/* ── PAGE ALUMNI ── */
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.alumni-card {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.alumni-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.09);
+}
+
+.alumni-header {
+  background: linear-gradient(135deg, #1a5c38 0%, #0e2a1a 100%);
+  padding: 1.3rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.alumni-rank {
+  font-size: 2rem;
+  font-weight: 900;
+  color: rgba(255,255,255,0.15);
+  line-height: 1;
+}
+
+.alumni-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(200,169,81,0.2);
+  border: 2px solid #c8a951;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #c8a951;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.alumni-header-info h3 {
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.alumni-header-info span {
+  color: #c8a951;
+  font-size: 0.75rem;
+}
+
+.alumni-body {
+  padding: 1.4rem;
+}
+
+.alumni-meta {
+  font-size: 0.84rem;
+  color: #6b7a6e;
+  line-height: 1.8;
+  margin-bottom: 0.9rem;
+}
+
+.alumni-meta strong {
+  color: #0e1a12;
+}
+
+.alumni-note {
+  display: inline-block;
+  background: rgba(26,92,56,0.08);
+  color: #1a5c38;
+  font-size: 1.2rem;
+  font-weight: 900;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  margin-bottom: 0.9rem;
+}
+
+.alumni-projet {
+  font-size: 0.82rem;
+  color: #6b7a6e;
+  line-height: 1.6;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  padding-top: 0.9rem;
+}
+
+.alumni-projet strong {
+  color: #0e1a12;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+  .hero h1 { font-size: 2.2rem; }
+  .section-title { font-size: 1.7rem; }
+  .nav-links { display: none; }
+  .detail-hero h1 { font-size: 1.8rem; }
+}
